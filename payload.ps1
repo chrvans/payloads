@@ -1,6 +1,6 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $WebClient = New-Object System.Net.WebClient
-Invoke-WebRequest -Uri "https://www.justgeek.fr/wp-content/uploads/2023/01/mettre-fond-ecran-anime-pc-768x432.jpg" -OutFile "C:\Users\$env:USERNAME\Desktop\bigup.jpg"
+wget "https://www.justgeek.fr/wp-content/uploads/2023/01/mettre-fond-ecran-anime-pc-768x432.jpg" -outFile "C:\Users\$env:USERNAME\Desktop\bigup.jpg"
 $setwallpapersrc = @"
 using System.Runtime.InteropServices;
 public class wallpaper
