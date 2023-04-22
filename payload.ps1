@@ -1,7 +1,6 @@
-$url = "https://www.justgeek.fr/wp-content/uploads/2023/01/mettre-fond-ecran-anime-pc-768x432.jpg"
-$output = "C:\Users\$env:USERNAME\Desktop\bigup.jpg"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-(New-Object System.Net.WebClient).DownloadFile($url, $output)
+$WebClient = New-Object System.Net.WebClient
+$WebClient.DownloadFile("https://www.justgeek.fr/wp-content/uploads/2023/01/mettre-fond-ecran-anime-pc-768x432.jpg","C:\Users\$env:USERNAME\Desktop\bigup.jpg")
 $setwallpapersrc = @"
 using System.Runtime.InteropServices;
 public class wallpaper
