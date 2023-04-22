@@ -1,5 +1,6 @@
-$url = "https://www.celside-magazine.com/app/uploads/2022/08/comment-mettre-un-fond-decran-anime-Celside-Magazine-1024x700.jpg"
+$url = "https://www.justgeek.fr/wp-content/uploads/2023/01/mettre-fond-ecran-anime-pc-768x432.jpg"
 $output = "C:\Users\$env:USERNAME\Desktop\bigup.jpg"
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 (New-Object System.Net.WebClient).DownloadFile($url, $output)
 $setwallpapersrc = @"
 using System.Runtime.InteropServices;
